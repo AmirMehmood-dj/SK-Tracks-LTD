@@ -202,7 +202,7 @@
     .hero-wrap h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-top: 4rem !important;
+      /* margin-top: 4rem !important; */
     }
 
     .hero-wrap .overlay {
@@ -214,7 +214,7 @@
       content: '';
       opacity: .3;
       background: #000000;
-      height: 1px;
+      height: 850px;
     }
 
     #hello {
@@ -295,6 +295,18 @@
       height: 60px;
     }
 
+    .ftco-footer p {
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #footer-hidden {
+      display: none;
+    }
+
     .block-23 ul {
       padding: 0;
       display: flex;
@@ -312,7 +324,7 @@
       content: '';
       opacity: .3;
       background: #000000;
-      height: 1px;
+      height: 900px;
     }
 
     #hello {
@@ -412,7 +424,7 @@
     }
 
     .hero-wrap {
-      height: 350px;
+      height: 450px;
     }
 
     .car-wrap .img {
@@ -438,7 +450,7 @@
     content: '';
     opacity: .3;
     background: #000000;
-    height: 100px;
+    height: 850px;
   }
 
   #performance {
@@ -467,7 +479,7 @@
         content: '';
         opacity: .3;
         background: #000000;
-        height: 1px;
+        height: 900px;
       }
     }
 
@@ -509,7 +521,7 @@
       content: '';
       opacity: .3;
       background: #000000;
-      height: 1px;
+      height: 900px;
     }
 
     .hero-wrap h1 {
@@ -602,6 +614,134 @@
   #about .nav-link {
     color: #C8102E !important;
   }
+
+  .header-container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .main-header {
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #003B75, #C8102E, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.4;
+    margin-bottom: 0;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+  }
+
+
+  .highlight-section {
+    /* background: linear-gradient(135deg, #C8102E, #e63946); */
+    color: white !important;
+    padding: 25px 40px;
+    border-radius: 15px;
+    /* box-shadow: 0 15px 30px rgba(200, 16, 46, 0.3); */
+    transform: translateY(-10px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .highlight-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+  }
+
+  .highlight-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .accent-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #C8102E;
+    border-radius: 50%;
+    margin: 0 8px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 0.7;
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-text {
+      font-size: 1.6rem;
+    }
+
+    .highlight-text {
+      font-size: 1.4rem;
+    }
+
+    .main-header {
+      padding: 10px 20px;
+    }
+
+    .highlight-section {
+      padding: 20px 25px;
+    }
+
+    .header-container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .main-text {
+      font-size: 1.3rem;
+    }
+
+    .highlight-text {
+      font-size: 1.2rem;
+    }
+  }
 </style>
 
 <body>
@@ -631,11 +771,19 @@
 
   <div class="hero-wrap" style="background-image: url(images/about.jpg)">
     <div class="overlay"></div>
-    <h1 class="mb-4">
-      <span class="green-text">We Provide reliable</span>
-      <span class="white-text"> private hire</span>
-      <span class="white-text"> <br>vehicles in the North West.</span>
-    </h1>
+    <div class="header-container">
+      <div class="main-header">
+        <h1 class="main-text">
+          We provide private hire and non plated vehicles in the north west
+        </h1>
+      </div>
+
+      <div class="highlight-section">
+        <h2 class="highlight-text">
+          ✨ We also offer parcel delivery country wide ✨
+        </h2>
+      </div>
+    </div>
     <!-- <p class="hero-text">We Provide reliable private hire vehicles in the North West.</p> -->
 
   </div>
@@ -664,7 +812,7 @@
                 </div>
                 <div class="contact-text">
                   <h6>Address</h6>
-                  <p>Altrincham</p>
+                  <p>10 kensington street Mosside Manchester M144JP</p>
                 </div>
               </div>
             </div>
@@ -677,7 +825,7 @@
                 </div>
                 <div class="contact-text">
                   <h6>Phone</h6>
-                  <p><a href="tel:07917192804">+07917192804</a></p>
+                  <p><a href="tel:07917192804">0044740093003</a></p>
                 </div>
               </div>
             </div>
@@ -686,32 +834,33 @@
         </div>
 
         <div class="col-md-8 block-9 mb-md-5">
-  <form action="https://formspree.io/f/xnnvkkok" method="POST" class="bg-light p-0 contact-form">
-    <div class="form-group">
-      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-    </div>
-    <div class="form-group">
-      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-    </div>
-    <div class="form-group">
-      <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-    </div>
+          <form action="https://formspree.io/f/xnnvkkok" method="POST" class="bg-light p-0 contact-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message"
+                required></textarea>
+            </div>
 
-    <!-- Optional: You can add a honeypot to reduce spam -->
-    <input type="text" name="_honey" style="display:none">
+            <!-- Optional: You can add a honeypot to reduce spam -->
+            <input type="text" name="_honey" style="display:none">
 
-    <!-- Optional: Redirect after submission -->
-    <input type="hidden" name="_redirect" value="thankyou.html">
+            <!-- Optional: Redirect after submission -->
+            <input type="hidden" name="_redirect" value="thankyou.html">
 
-    <div class="form-group">
-      <input type="submit" value="Send Message" class="btn py-2 px-3"
-        style="background-color: #C8102E; color: white;">
-    </div>
-  </form>
-</div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn py-2 px-3"
+                style="background-color: #C8102E; color: white;">
+            </div>
+          </form>
+        </div>
 
       </div>
     </div>
@@ -730,12 +879,15 @@
               <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              <li class="ftco-animate"><a href="https://wa.me/03150030730" target="_blank"><span
-                    class="icon-whatsapp"></span></a></li> <!-- WhatsApp Icon Added -->
+              <li class="ftco-animate whatsapp-button">
+                <a href="https://wa.me/00447400939003" target="_blank">
+                  <span class="icon-whatsapp"></span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md" id="footer-hidden">
           <div class="ftco-footer-widget mb-0 ml-md-5">
             <h2 class="ftco-heading-2">Information</h2>
             <ul class="list-unstyled">
@@ -756,13 +908,17 @@
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon icon-map-marker" style="color: darkgray;"></span><span class="text"
-                    style="color: darkgray;">Altrincham</span></li>
+                    style="color: darkgray;">10 kensington street Mosside Manchester M144JP</span></li>
+
 
                 <li><a href="#"><span class="icon icon-phone"></span>
-                    <div style="display: flex; flex-direction: column;"><span class="text">+07400939003</span> <span
-                        class="text">+07460441529</span></div>
+                    <div style="display: flex; flex-direction: column;"><span class="text">00447400939003</span></div>
                   </a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">demo@outlook.com</span></a>
+                <li><a href="#"><span class="icon icon-envelope"></span>
+                    <div style="display: flex; flex-direction: column"><span
+                        class="text">sktracks13@gmail.com</span><span class="text">sktracks13@gmail.com</span></div>
+                  </a>
+
                 </li>
               </ul>
             </div>
@@ -773,6 +929,47 @@
     </div>
     </div>
   </footer>
+
+  <style>
+    .whatsapp-button a {
+      background-color: #25D366;
+      /* WhatsApp green */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      animation: pulse-whatsapp 1.8s infinite ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+
+    /* Optional: make the icon itself slightly larger */
+    .whatsapp-button .icon-whatsapp {
+      font-size: 24px;
+    }
+
+    /* Pulse Animation */
+    @keyframes pulse-whatsapp {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+  </style>
+
 
 
 
