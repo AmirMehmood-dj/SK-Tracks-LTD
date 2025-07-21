@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
     rel="stylesheet">
 
@@ -26,11 +25,11 @@
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <style>
   .ftco-navbar-light.scrolled .nav-link {
     padding-top: 0.9rem !important;
@@ -92,19 +91,15 @@
   }
 
   .hero-wrap h1 {
-
     color: #003B75;
-
   }
 
   .hero-wrap {
     position: relative;
     background-size: cover;
-    /* background-position: center; */
     padding: 100px 20px;
     text-align: center;
     color: #fff;
-
   }
 
   .heading-section.heading-section-white .subheading {
@@ -140,12 +135,9 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 9rem;
-
-
   }
 
   .hero-wrap p {
-
     font-weight: 600;
     color: white;
   }
@@ -168,6 +160,41 @@
     margin-bottom: 5px !important;
     font-size: 20px;
     font-weight: 400;
+  }
+
+  /* Success and Error Messages */
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+
+  .btn-custom {
+    background-color: #C8102E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #A00D25;
+    color: white;
   }
 
   /* Responsive styles for mobile screens */
@@ -202,7 +229,6 @@
     .hero-wrap h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      /* margin-top: 4rem !important; */
     }
 
     .hero-wrap .overlay {
@@ -223,7 +249,6 @@
 
     .hero-wrap {
       min-height: 300px;
-      /* Reduce height for mobile */
       margin-top: 65px;
     }
 
@@ -238,12 +263,8 @@
       font-size: 16px;
     }
 
-
-
-
     .hero-wrap p {
       font-size: 16px;
-      /* Adjust text size for readability */
       color: white;
     }
 
@@ -253,33 +274,26 @@
 
     .car-wrap .img {
       height: 150px;
-      /* Reduce image height for mobile */
     }
 
     .car-wrap .text h2 {
       font-size: 16px;
-      /* Smaller font for mobile */
     }
 
     .carousel-car .item {
       margin: 0 10px;
-      /* Adjust margins for mobile */
     }
 
     .heading-section h2 {
       font-size: 20px;
-      /* Adjust heading font size */
     }
 
     .block-18 .number {
       font-size: 24px;
-      /* Adjust counter font size */
     }
 
-    /* Footer adjustments */
     .ftco-footer .col-md {
       text-align: center;
-      /* Center content in footer for mobile */
       margin-bottom: 30px;
     }
 
@@ -335,8 +349,6 @@
       background: black;
       border: 1px solid black;
       color: black !important;
-      /* height: 3rem; */
-      /* font-size: 13px; */
     }
 
     #performance {
@@ -381,7 +393,6 @@
       display: flex;
       width: 125px;
       margin: auto;
-
     }
 
     .row .img {
@@ -405,7 +416,6 @@
       margin: auto;
       text-align: center;
       font-weight: 600;
-
     }
 
     .heading-section.heading-section-white h2 {
@@ -430,7 +440,6 @@
     .car-wrap .img {
       height: 230px;
     }
-
 
     .car-wrap .text h1 {
       font-size: 14px;
@@ -464,23 +473,22 @@
     align-items: center;
   }
 
-  /* For screens 768px and below (tablets and mobiles) */
   @media (max-width: 768px) {
     #performance {
       flex-direction: row;
       flex-wrap: wrap;
+    }
 
-      .hero-wrap .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: .3;
-        background: #000000;
-        height: 900px;
-      }
+    .hero-wrap .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      opacity: .3;
+      background: #000000;
+      height: 900px;
     }
 
     #hello {
@@ -489,9 +497,7 @@
 
     .counter-wrap {
       flex: 0 0 50%;
-      /* Each item takes 50% of the row */
       max-width: 50%;
-      /* Ensures each item doesn't exceed 50% */
     }
   }
 
@@ -501,14 +507,11 @@
 
   .white-text {
     color: white;
-
   }
 
-  /* For very small screens (480px and below) */
   @media (max-width: 480px) {
     .counter-wrap {
       flex: 0 0 50%;
-      /* Keeps two items per row even on smaller screens */
       max-width: 50%;
     }
 
@@ -537,7 +540,6 @@
 
     .white-text {
       color: white;
-
     }
 
     #hello {
@@ -573,7 +575,6 @@
   .contact-card .icon {
     font-size: 28px;
     color: #C8102E;
-    /* margin-top: 4px; */
     display: flex;
   }
 
@@ -641,13 +642,10 @@
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
   }
 
-
   .highlight-section {
-    /* background: linear-gradient(135deg, #C8102E, #e63946); */
     color: white !important;
     padding: 25px 40px;
     border-radius: 15px;
-    /* box-shadow: 0 15px 30px rgba(200, 16, 46, 0.3); */
     transform: translateY(-10px);
     position: relative;
     overflow: hidden;
@@ -759,15 +757,11 @@
           <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
           <li class="nav-item" id="about"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- END nav -->
 
   <div class="hero-wrap" style="background-image: url(images/about.jpg)">
     <div class="overlay"></div>
@@ -784,27 +778,21 @@
         </h2>
       </div>
     </div>
-    <!-- <p class="hero-text">We Provide reliable private hire vehicles in the North West.</p> -->
-
   </div>
-
 
   <section class="ftco-section contact-section" id="hello">
     <div class="container">
-      <!-- Heading Section Start -->
       <div class="row justify-content-center mb-5">
         <div class="col-md-7 text-center heading-section ftco-animate">
           <h2 class="mb-3" style="color: #C8102E;">Contact Us</h2>
           <span class="subheading">Get in touch to book your next ride with ease</span>
         </div>
       </div>
-      <!-- Heading Section End -->
+
 
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-4">
           <div class="row mb-5">
-
-            <!-- Address Card -->
             <div class="col-md-12 mb-3">
               <div class="contact-card d-flex align-items-start">
                 <div class="icon">
@@ -812,12 +800,11 @@
                 </div>
                 <div class="contact-text">
                   <h6>Address</h6>
-                  <p>10 kensington street Mosside Manchester M144JP</p>
+                  <p>10 Kensington Street, Mosside, Manchester M144JP</p>
                 </div>
               </div>
             </div>
 
-            <!-- Phone Card -->
             <div class="col-md-12 mb-3">
               <div class="contact-card d-flex align-items-start">
                 <div class="icon">
@@ -825,39 +812,39 @@
                 </div>
                 <div class="contact-text">
                   <h6>Phone</h6>
-                  <p><a href="tel:07917192804">0044740093003</a></p>
+                  <p><a href="tel:0044740093003">0044740093003</a></p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
         <div class="col-md-8 block-9 mb-md-5">
-          <form action="https://formspree.io/f/xnnvkkok" method="POST" class="bg-light p-0 contact-form">
-            <div class="form-group">
+          <form action="https://formspree.io/f/mgvzojkr" method="POST" class="contact-form">
+            <div class="mb-3">
               <input type="text" name="name" class="form-control" placeholder="Your Name" required>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <input type="email" name="email" class="form-control" placeholder="Your Email" required>
             </div>
-            <div class="form-group">
-              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            <div class="mb-3">
+              <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required
+                pattern="[0-9+\-\s()]+">
             </div>
-            <div class="form-group">
+
+            <div class="mb-3">
               <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message"
                 required></textarea>
             </div>
 
-            <!-- Optional: You can add a honeypot to reduce spam -->
+            <!-- Honeypot to prevent spam -->
             <input type="text" name="_honey" style="display:none">
 
-            <!-- Optional: Redirect after submission -->
-            <input type="hidden" name="_redirect" value="thankyou.html">
+            <!-- Optional: Redirect after form submission -->
+            <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
 
-            <div class="form-group">
-              <input type="submit" value="Send Message" class="btn py-2 px-3"
-                style="background-color: #C8102E; color: white;">
+            <div class="mb-3">
+              <input type="submit" value="Send Message" class="btn btn-custom py-2 px-4">
             </div>
           </form>
         </div>
@@ -865,7 +852,6 @@
       </div>
     </div>
   </section>
-
 
   <footer class="ftco-footer ftco-bg-dark ftco-section" style="padding: 40px 0px;">
     <div class="container">
@@ -892,12 +878,9 @@
             <h2 class="ftco-heading-2">Information</h2>
             <ul class="list-unstyled">
               <li><a href="index.html" class="py-2 d-block">Home</a></li>
-
               <li><a href="about.html" class="py-2 d-block">About</a></li>
               <li><a href="services.html" class="py-2 d-block">Services</a></li>
               <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
-              <!-- <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li> -->
             </ul>
           </div>
         </div>
@@ -909,31 +892,78 @@
               <ul>
                 <li><span class="icon icon-map-marker" style="color: darkgray;"></span><span class="text"
                     style="color: darkgray;">10 kensington street Mosside Manchester M144JP</span></li>
-
-
                 <li><a href="#"><span class="icon icon-phone"></span>
                     <div style="display: flex; flex-direction: column;"><span class="text">00447400939003</span></div>
                   </a></li>
                 <li><a href="#"><span class="icon icon-envelope"></span>
                     <div style="display: flex; flex-direction: column"><span
-                        class="text">sktracks13@gmail.com</span><span class="text">sktracks13@gmail.com</span></div>
-                  </a>
-
-                </li>
+                        class="text">sktracks13@gmail.com</span><span class="text">sktracks13@yahoo.com</span></div>
+                  </a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
-    </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script>
+    // Replace the existing form script with this updated version
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('.contact-form');
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Show loading alert
+        swal({
+          title: "Sending...",
+          text: "Please wait while we send your message.",
+          icon: "info",
+          buttons: false,
+          closeOnClickOutside: false,
+          closeOnEsc: false
+        });
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            swal({
+              title: "Success!",
+              text: "Your message has been sent successfully. We'll get back to you soon!",
+              icon: "success",
+              button: "Okay"
+            });
+            form.reset();
+          } else {
+            const data = await response.json();
+            throw new Error(data.error || "Something went wrong.");
+          }
+        } catch (error) {
+          swal({
+            title: "Error!",
+            text: "Failed to send message: " + error.message + ". Please try again or contact us directly.",
+            icon: "error",
+            button: "Okay"
+          });
+        }
+      });
+    });
+  </script>
+
 
   <style>
     .whatsapp-button a {
       background-color: #25D366;
-      /* WhatsApp green */
       color: white;
       display: flex;
       align-items: center;
@@ -946,12 +976,10 @@
       text-decoration: none;
     }
 
-    /* Optional: make the icon itself slightly larger */
     .whatsapp-button .icon-whatsapp {
       font-size: 24px;
     }
 
-    /* Pulse Animation */
     @keyframes pulse-whatsapp {
       0% {
         transform: scale(1);
@@ -970,16 +998,12 @@
     }
   </style>
 
-
-
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
-
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
